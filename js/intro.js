@@ -3,7 +3,7 @@ document.getElementById("username").addEventListener("keydown", function (e) {
     const username = e.target.value.trim();
     if (username) {
       localStorage.setItem("githubUser", username);
-      window.location.href = "index.html"; // load the main dashboard
+      window.location.href = "/html/dashboard.html"; // load the main dashboard
     }
   }
 });
