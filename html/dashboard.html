@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dev Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Dev Dashboard</h2>
+    <a href="#">🏁 Projects</a>
+    <a href="#">📓 Notes</a>
+    <a href="#">📊 GitHub Stats</a>
+    <a href="#">⚙️ Tools</a>
+
+  </div>
+
+  <div class="main">
+    <div class="widget">
+      <h3>Quick Notes</h3>
+      <div class="note-area" contenteditable="true" spellcheck="true">Jot down your thoughts here...</div>
+    </div>
+
+ <div class="widget">
+      <h3>Projects</h3>
+      <div class="project-grid">
+        <div class="project-card">
+          <input type="text" id="repo-name" placeholder="Enter repository name" />
+          <button id="add-project-btn">➕ Add Project</button>
+          <ul id="site-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="widget" id="github-stats">
+      <h3>GitHub Stats</h3>
+      <div id="stats-summary"></div>
+      <div id="commit-grid"></div>
+    </div>
+
+    <div class="widget">
+      <h3>Repositories</h3>
+      <ul id="repo-list"></ul>
+    </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
